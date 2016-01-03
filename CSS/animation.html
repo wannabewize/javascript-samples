@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id='ani' style='width:200px; height:200px;'>
+            <p>Animation</p>
+        </div>
+        <style>
+            @keyframes changeColorAndPosition {
+                0%   {background: red; left:0px; top:0px;}
+                25%  {background: yellow; left:200px; top:0px;}
+                50%  {background: blue; left:200px; top:200px;}
+                75%  {background: green; left:0px; top:200px;}
+                100% {background: red; left:0px; top:0px;}
+            }
+
+            div {
+                position: absolute;
+                animation-name: changeColorAndPosition;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-play-state: running;
+            }
+        </style>
+    </body>
+</html>
