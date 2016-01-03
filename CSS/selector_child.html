@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+   <h1>Child</h1>
+   <div class="child">
+      <ul>
+         <li>첫 번째</li>
+         <li>두 번째</li>
+         <li>세 번째</li>
+         <li>네 번째</li>
+         <li>다섯 번째</li>
+      </ul>
+   </div>
+   <style>
+      .child li:first-child {
+         color: red;
+      }
+      
+      .child li:nth-child(3) {
+         color: blue;
+      }
+      
+      .child li:nth-child(2n) {
+         background-color: lightgrey;
+      }
+   </style>
+</body>
+
+</html>

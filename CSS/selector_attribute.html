@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+   <h1>Attribute</h1>
+   <div class='attribute'>
+      <p myAttr='first second third'>User Attribute</p>
+      <button>그냥 버튼</button>
+      <button type="reset">초기화</button>
+      <button type="submit">완료</button>
+   </div>
+   <style>
+      p[myAttr] {
+         color: red;
+      }
+      
+      p[myAttr ~='third'] {
+         background-color: aqua;
+      }
+      
+      button[type='reset'] {
+         color: blue
+      }
+      
+      button:hover {
+         color: red;
+      }
+      
+      button[type$='it'] {
+         color: purple;
+      }
+   </style>
+</body>
+
+</html>
