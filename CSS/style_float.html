@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  
+<h3>float</h3>
+<div class="border outer">
+   <div class="border inner" style="float:left">A</div>   
+   <div class="border inner" style="float:left">B</div>
+   <div class="border inner" style="float:right">C</div>   
+</div>
+
+<h3>clear</h3>
+<div class="border outer">
+   <div class="border inner" style="float:left">A</div>   
+   <div class="border" style="clear:both;">B</div>
+</div>
+</body>
+<style>   
+   .border { border : solid 1px black; margin:1px; }
+   .outer { width:300px; height:100px; }
+   .inner { width:50px; height:50px; display:inline-block; text-align: center; }
+</style>
+</html>

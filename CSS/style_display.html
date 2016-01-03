@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h3>Block</h3>
+<div class="border outer">
+   <div class="border inner"></div>   
+   <div class="border inner"></div>
+   <div class="border inner"></div>
+</div>   
+<h3>Inline</h3>
+<div class="border outer">
+   <div class="border inner inline">A</div>   
+   <div class="border inner inline">B</div>
+   <div class="border inner inline">C</div>   
+</div>
+<h3>Inline-Block</h3>
+<div class="border outer">
+   <div class="border inner inline-block">A</div>   
+   <div class="border inner inline-block">B</div>
+   <div class="border inner inline-block">C</div>   
+</div>
+<h3>Table</h3>
+<div class="border outer" style="display:table;">
+   <div class="border inner" style="display:table-row;">   
+      <div class="border inner table">Cell1</div>
+      <div class="border inner table">Cell2</div>   
+   </div>
+   <div class="border inner" style="display:table-row;">   
+      <div class="border inner table">Cell1</div>
+      <div class="border inner table">Cell2</div>   
+      <div class="border inner table">Cell3</div>   
+   </div>
+</div>
+</body>
+<style>
+   .border { border : solid 1px black; margin:1px; }
+   .outer { width:200px; height:200px; }
+   .inner { width:50px; height:50px; }
+   .inline { display:inline; }
+   .inline-block { display: inline-block; }
+   .table { display:table-cell; }   
+</style>
+</html>
