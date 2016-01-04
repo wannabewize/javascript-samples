@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+</head>
+
+<h1>Font Family</h1>
+<p style="font-family:'Times New Roman'">Serif</p>
+<p style="font-family:Arial">San-Serif</p>
+<p>기본 폰트</p>
+<p class="custom">나눔 폰트</p>
+
+<h1>Font size</h1>
+<p>Default Size</p>
+<p style="font-size:20px;">Font size : 20px</p>
+<p style="font-size:1.5em">Font size : 1.5em</p>
+
+<h1>Text Decoration</h1>
+<p style="text-decoration:underline">Underline</p>
+<a href="#" style="text-decoration:none">Link with Underline</a>
+
+<h1>Text Align</h1>
+<div>
+   <p>Normal</p>
+   <p style="text-align:center">Center</p>
+   <p style="text-align:right">Right</p>         
+</div>
+
+
+<style>
+   div { width : 300px; border:solid 1px black; }
+   
+   @font-face {
+      font-family: myFont;
+      src: url(../resource/nanum.ttf);
+   }
+   
+   p.custom {
+      font-family: myFont
+   }
+</style>
+
+</html>
