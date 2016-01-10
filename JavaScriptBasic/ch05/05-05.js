@@ -22,8 +22,6 @@ console.log(Rectangle.prototype); // Rectangle { size: [Function] }
  */
 var obj1 = new Rectangle(10, 10);
 console.log(obj1.prototype); // undefined
-
-console.log(obj1.prototype); // undefined
 console.log(obj1.size); // [Function]
 console.log(obj1.size()); // 100
 
