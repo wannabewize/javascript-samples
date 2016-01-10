@@ -5,13 +5,15 @@ function Rectangle(w, h) {
 
 var obj1 = new Rectangle(10, 10);
 
-console.log(obj1.prototype); // undefined
+
 /**
  * constructor
  */
-console.log(obj1.constructor);
-console.log(obj1.constructor == Rectangle); // true
-console.log(obj1.constructor === Rectangle); // true
+
+console.log('Rectangle : ',Rectangle);
+console.log('obj.constructor : ',obj1.constructor);
+console.log('obj.constructor == Rectangle : ',obj1.constructor == Rectangle); // true
+console.log('obj.constructor.prototype == Rectangle.prototype : ', obj1.constructor.prototype === Rectangle.prototype); // true
 
 var obj2 = new Rectangle(20, 20);
 console.log(obj1.constructor == obj2.constructor); // true

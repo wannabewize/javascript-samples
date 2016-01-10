@@ -8,7 +8,6 @@ function Rectangle(w, h) {
  */
 console.log(Rectangle.prototype); // Rectangle {}
 
-
 /**
  * 프로포타입내 함수 정의
  */
@@ -24,7 +23,6 @@ var obj1 = new Rectangle(10, 10);
 console.log(obj1.prototype); // undefined
 console.log(obj1.size); // [Function]
 console.log(obj1.size()); // 100
-
 
 /**
  * 프로토타입에 함수 추가
