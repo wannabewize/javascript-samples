@@ -25,7 +25,7 @@ console.log(obj1.size); // [Function]
 console.log(obj1.size()); // 100
 
 /**
- * 프로토타입에 함수 추가
+ * 프로토타입에 2번째 함수 추가
  */
 Rectangle.prototype.toString = function() {
    return 'Rectangle w(' + this.width + ') h(' + this.height + ')';
@@ -38,17 +38,3 @@ console.log(Rectangle.prototype); // Rectangle { size: [Function], toString: [Fu
  */
 delete Rectangle.prototype.toString
 console.log(Rectangle.prototype); // Rectangle { size: [Function] }
-
-/**
- * 프로토타입에 프로퍼티 추가
- */
-Rectangle.prototype.x = 10;
-
-console.log(obj1.x);
-
-var obj2 = new Rectangle(20, 20);
-console.log(obj2.x);
-
-obj1.x = 30;
-console.log(obj1.x); // 30
-console.log(obj2.x); // 10
