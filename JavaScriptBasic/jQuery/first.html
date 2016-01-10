@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+   <script src="jquery.min.js"></script>
+   <script>
+      $(document).ready(function() {
+         console.log('Ready!');
+         
+         $('#target').addClass('border');
+         $('div').addClass('size100');
+      });
+      
+   </script>
+   <style>
+      .border { border : solid 1px black; }
+      .size100 { width:100px; height:100px; }
+   </style>
+</head>   
+<body>
+   <div id="target"></div>
+   
+</body>   
+</html>
