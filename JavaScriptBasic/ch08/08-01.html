@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+   <style>
+   div { width:100px; height:100px; background-color:red; }
+   </style>   
+</head>   
+<body>
+   <h1>Java Script Example</h1>
+   <h2>getElementById</h2>      
+   <script>
+      var element = document.getElementById("div1");
+      console.log(element);
+   </script>
+   
+   <div id="div1">
+   </div>
+   
+   <script>      
+      console.log(element);
+      var element2 = document.getElementById("div1");
+      console.log(element2);
+   </script>
+   
+   <h2>appendChild</h2>
+   <script>
+      var newNode = document.createElement('p');      
+      var newTextNode = document.createTextNode('Hello');
+      
+      element2.appendChild(newNode);
+      newNode.appendChild(newTextNode);
+   </script>
+   
+   
+   <h2>delete child</h2>
+   <div id="div2">
+      <p>Delete</p>
+   </div>
+   <script>
+      // 삭제 대상 구하기
+      var nodeList = document.getElementsByTagName("div");
+      var node = nodeList[1];
+      
+      // 부모 노드에서 자식 노드 삭제
+      var parent = node.parentElement;
+      console.log(parent);
+      // 3초뒤
+      setTimeout(function() {
+         parent.removeChild(node);   
+      }, 3000);
+            
+   </script>
+</body>   
+</html>
