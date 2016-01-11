@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+   <script src="jquery.min.js"></script>
+   <script>
+      var todos = [
+         { todo:'좋은날', dudDate:new Date(), done:false}
+      ];
+      
+      $(document).ready(function() {
+         todos.forEach(function(item) {
+            $('#todos').append( '<li>' + item.todo + '</li>' );   
+         });
+         
+         $('#todoForm').submit(function() {
+            
+            console.log('submit');
+            var todo = $('[name="todo"').val();
+            var dueDate = $('[name="dueDate"]').val();
+            
+            todos.push({todo:todo, dueDate:dueDate});
+            $('#todos').append( '<li>' + todo + '</li>' );
+
+            return false;
+         });
+      });            
+   </script>
+</head>
+<body>
+<h1>Todo</h1>
+<div>
+<ul id="todos">
+</ul>
+</div>
+
+<form id="todoForm">
+   <input type="text" name="todo"><br>
+   <input type="date" name="dueDate"><br>   
+   <input type="submit">      
+</form>
+</body>
+</html>
