@@ -1,25 +1,40 @@
 <!doctype html>
 <html>
 <head>
+   <meta charset="UTF-8">
    <script src="jquery.min.js"></script>
    <script>
       var todos = [
-         { todo:'좋은날', dudDate:new Date(), done:false}
+         { todo:'좋은날', date:new Date(), done:false}
       ];
+      
+      function showTodos() {
+         var $todos = $('#todos');
+         $todos.empty();
+         
+         todos.forEach(function(todo) {
+            $('#todos').append( '<li>' + todo.todo + '</li>' );
+         });
+      }
       
       $(document).ready(function() {
          todos.forEach(function(item) {
-            $('#todos').append( '<li>' + item.todo + '</li>' );   
+            $('#todos').append( '<li>' + item.todo  + ' ( ' + item.date + ')</li>' );   
          });
          
          $('#todoForm').submit(function() {
             
-            console.log('submit');
             var todo = $('[name="todo"').val();
-            var dueDate = $('[name="dueDate"]').val();
+            var date = $('[name="dueDate"]').val();
             
-            todos.push({todo:todo, dueDate:dueDate});
+            console.log('submit ', date);
+            
+            todos.push({todo:todo, date:date});
+            // var $todoNode = $('li').text(todo);
+            // $todoNode.appendTo('#todos');
+            // $('#todos').append( $('li').text(todo) );
             $('#todos').append( '<li>' + todo + '</li>' );
+            
 
             return false;
          });
@@ -36,7 +51,7 @@
 <form id="todoForm">
    <input type="text" name="todo"><br>
    <input type="date" name="dueDate"><br>   
-   <input type="submit">      
+   <input type="submit" value="입력">      
 </form>
 </body>
 </html>
