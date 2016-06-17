@@ -5,11 +5,15 @@ function sayHelloTo(who) {
    console.log('who : ', who, ' arguments : ', arguments);
    
    for ( var key in arguments ) {
-      console.log('Hello ', arguments[key]);
+      console.log('For-in Loop ', arguments[key]);
+   }
+
+   for(var i = 0 ; i < arguments.length ; i++ ) {
+      console.log('C style Loop : ', arguments[i]);
    }
 }
 
-sayHelloTo('IU', 'Inna');
+sayHelloTo('IU', 'Inna', 'Taeyon');
 
 // ES6
 console.log('== ES6 ==');
