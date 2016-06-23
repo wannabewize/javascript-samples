@@ -13,15 +13,16 @@ function sayHelloTo(who) {
    }
 }
 
-sayHelloTo('IU', 'Inna', 'Taeyon');
+sayHelloTo('IU', 'YuInna', 'Taeyon');
 
 // ES6
 console.log('== ES6 ==');
 function wantToBuy(...things) {
-   console.log('count : ', things.length);
-   things.forEach(function(item, index, array) {
-      console.log('I want to buy ' + item);
-   });
+   console.log('things : ', things);
+
+   for(var i = 0 ; i < things.length ; i++) {
+      console.log('I want to buy ' + things[i]);
+   }
 }
 
 wantToBuy('iMac', 'iPhone', 'New Macbook');
