@@ -20,18 +20,3 @@ var dj = {
    }
 };
 dj.sayHello();
-
-function Actor(name, movie) {
-    this.name = name;
-    this.movie = movie;
-	
-    this.act = function() {
-        console.log(this.name + ' perform in ' + this.movie);
-    }
-};
-
-var johansson = new Actor('Johansson', 'Avengers');
-johansson.act();
-
-var alba = new Actor('Jessica Albl', 'Into the blue');
-alba.act();
