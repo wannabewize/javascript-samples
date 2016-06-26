@@ -1,6 +1,6 @@
 console.log('ceil(3.14) : ',Math.ceil(3.14));
 console.log('floor(3.14) : ',Math.floor(3.14));
-console.log('rount(3.4) : ', Math.round(3.4), ' round(3.5) : ', Math.round(3.5));
+console.log('round(3.4) : ', Math.round(3.4), ' round(3.5) : ', Math.round(3.5));
 console.log('abs(-1) : ', Math.abs(-1));
 
 console.log('random() : ', Math.random());
