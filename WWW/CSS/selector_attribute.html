@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+   <h1>Attribute</h1>
+   <div>
+      <p myAttr="first">Custom Attribute : first</p>
+      <p myAttr="first second">Custom Attribute : first, second</p>
+   </div>
+   <div class="sample">
+      <input type="button" value="그냥 버튼">
+      <br>
+      <input type="reset" value="초기화">
+      <br>
+      <input type="submit" value="완료">
+   </div>
+   <div class="sample">      
+      <input type="checkbox" name="Bus" checked>Bus
+      <br>
+      <input type="checkbox" name="Metro">Metro
+      <br>
+      <input type="checkbox" name="Walk">Walk
+   </div>
+   <style>
+      p[myAttr] {
+         color: red;
+      }
+      
+      /* myAttr에 */
+      p[myAttr ~="second"] {
+         font-size: 20px;
+      }
+      
+      /* 타입이 reset인 input */
+      input[type="reset"] {
+         color: blue
+      }
+      
+      /* 마우스 오버된 input */
+      input:hover {
+         color: red;
+      }
+      
+      /* type 속성값에 tt가 포함된 input */
+      input[type*="tt"] {
+         color: purple;
+      }
+      
+      /* 체크된 인풋 항목 */
+      input:checked {
+         margin-left: 20px;                           
+      }
+      
+      /* sample 클래스가 없는 div */
+      div:not(.sample) {
+         background-color: yellow;
+      }
+   </style>
+</body>
+
+</html>

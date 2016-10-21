@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  
+<h3>float</h3>
+<div class="outer border">
+   <div class="inner border" style="float:left"><p>A</p></div>
+   <div class="inner border"><p>Default</p></div>   
+   <div class="inner border" style="float:left"><p>B</p></div>
+   <div class="inner border" style="float:right">RIGHT</div>   
+</div>
+
+<h3>clear:both</h3>
+<div class="border outer">
+   <div class="inner border" style="float:left"><p>A</p></div>   
+   <div class="inner border" style="clear:both;"><p>Clear</p></div>         
+   <div class="inner border" style="float:left"><p>B</p></div>
+   <div class="inner border" style="float:right">RIGHT</div>
+</div>
+
+<h3>clear:left</h3>
+<div class="border outer">
+   <div class="inner border" style="float:left"><p>A</p></div>   
+   <div class="inner border" style="clear:left;"><p>Clear</p></div>   
+   <div class="inner border" style="float:left"><p>B</p></div>       
+   <div class="inner border" style="float:right">RIGHT</div>
+</div>
+
+<h3>clear:right</h3>
+<div class="border outer">
+   <div class="inner border" style="float:left"><p>A</p></div>   
+   <div class="inner border" style="clear:right;"><p>Clear</p></div>   
+   <div class="inner border" style="float:left"><p>B</p></div>
+   <div class="inner border" style="float:right"><p>RIGHT</p></div>
+</div>
+   <img style="clear:right;" src="../resource/cat.png">   
+
+</body>
+<style>   
+   div.border { border : solid 1px black; margin:1px; }
+   div.outer { width:300px; height:200px; }
+   div.inner { width:50px; height:50px; text-align: center;}
+   p { font-size: 14pt; vertical-align: middle;}
+   img { width:100px; height:100px; }
+</style>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+
+   <style>
+      nav h1 {
+         position: absolute;
+         font-size: 1px;
+      }
+      
+      nav ul,
+      nav li {
+         margin: 0;
+         padding: 0;
+      }
+      
+      nav li {
+         display: inline;
+         margin-right: 10px;
+      }
+      
+      section {
+         border: 1px dashed #f33;
+         margin-bottom: 10px;
+         display: block;
+      }
+      
+      nav {
+         margin-bottom: 10px;
+         padding: 10px;
+         background-color: #9ee6db
+      }
+      
+      @media all and (min-width:480px) {
+         nav {
+            float: left;
+            margin-right: 10px;
+         }
+         .content {
+            overflow: hidden;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <nav>
+      <h1>메뉴</h1>
+      <ul>
+         <li><a href="#music">뮤직</a></li>
+         <li><a href="#movie">영화</a></li>
+         <li><a href="#game">게임</a></li>
+      </ul>
+   </nav>
+
+   <div class='content'>
+      <section id='music'>
+         <h1>뮤직</h1>
+         <ul>
+            <li>'나는 가수다'의 노래</li>
+            <li>타마엔 베가본드</li>
+            <li>김진의 추천 앨범</li>
+         </ul>
+      </section>
+      <section id='movie'>
+         <h1>영화</h1>
+         <ul>
+            <li>여름 미드 추천</li>
+            <li>슈퍼맨과 배트맨의 고향 DC코믹스 무비</li>
+            <li>장점과 단점이 공존하는 영화, 윤계상의 '풍산개'</li>
+         </ul>
+      </section>
+      <section id='game'>
+         <h1>게임</h1>
+         <ul>
+            <li>MMORPG 유저라면 솔깃한 이야기</li>
+            <li>순간 판단력이 중요해요, 미로찾기</li>
+            <li>귀엽고 사랑스러운 내 양들과 함께!</li>
+         </ul>
+      </section>
+   </div>
+
+</body>
+
+</html>

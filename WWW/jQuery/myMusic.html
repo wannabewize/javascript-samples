@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+   <script src="jquery.min.js"></script>
+   <script>
+      var musicList = [
+         { title:'좋은날', singer:'iU'}
+      ];
+      
+      $(document).ready(function() {
+         musicList.forEach(function(item) {
+            console.log('append music : ', item.title);
+            
+            $('#musics').append( '<li>' + item.title + '</li>' );   
+         });
+         
+         $('#songInput').submit(function() {
+            console.log('submit');
+            $('form');
+            return false;
+         });
+         
+      });
+      
+   </script>
+   <style>
+      .border { border : solid 1px black; }
+      .size100 { width:100px; height:100px; }
+      .redBG { background-color: red; }
+   </style>
+</head>   
+<body>
+   <h1>My Music</h1>
+   <div>
+   <ul id="musics">
+   </ul>
+   </div>
+   
+   <form id="songInput">
+      <input type="text" name="title"><br>
+      <input type="text" name="singer"><br>
+      <input type="submit">      
+   </form>
+   
+</body>   
+</html>

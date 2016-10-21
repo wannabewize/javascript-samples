@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  
+<h3>border</h3>
+<div style="border:solid 2px red">
+   Solid 2px Red
+</div>
+<div style="border:dotted 2px rgb(100,100,100)">
+   dotted 2px (100,100,100)
+</div>
+<div style="border:dashed 2px #F0F">
+   dashed 2px #F0F
+</div>
+<div style="border:dashed 2px #F0F">
+   dashed 2px #F0F
+</div>
+<div class="myborder">
+   개별
+</div>
+<div style="border:solid 2px black; border-radius:10px;">
+   Round
+</div>
+
+
+</body>
+<style>
+   div { width:200px; height:100px; text-align: center; margin:3px; }
+   div.myborder {
+      border-left-style: solid;
+      border-left-width: 2px;
+      border-left-color: blue;
+      
+      border-top-style: dotted;
+      border-top-width: 5px;
+      border-top-color: rgb(200,200,200);
+      
+      border-right-style: dashed;
+      border-right-width: 2px;
+      border-right-color: #F00;
+   }
+</style>
+</html>

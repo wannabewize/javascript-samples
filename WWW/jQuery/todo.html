@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <script src="jquery.min.js"></script>
+   <script>
+      var todos = [
+         { todo:'좋은날', date:new Date(), done:false}
+      ];
+      
+      function showTodos() {
+         var $todos = $('#todos');
+         $todos.empty();
+         
+         todos.forEach(function(todo) {
+            $('#todos').append( '<li>' + todo.todo + '</li>' );
+         });
+      }
+      
+      $(document).ready(function() {
+         todos.forEach(function(item) {
+            $('#todos').append( '<li>' + item.todo  + ' ( ' + item.date + ')</li>' );   
+         });
+         
+         $('#todoForm').submit(function() {
+            
+            var todo = $('[name="todo"').val();
+            var date = $('[name="dueDate"]').val();
+            
+            console.log('submit ', date);
+            
+            todos.push({todo:todo, date:date});
+            // var $todoNode = $('li').text(todo);
+            // $todoNode.appendTo('#todos');
+            // $('#todos').append( $('li').text(todo) );
+            $('#todos').append( '<li>' + todo + '</li>' );
+            
+
+            return false;
+         });
+      });            
+   </script>
+</head>
+<body>
+<h1>Todo</h1>
+<div>
+<ul id="todos">
+</ul>
+</div>
+
+<form id="todoForm">
+   <input type="text" name="todo"><br>
+   <input type="date" name="dueDate"><br>   
+   <input type="submit" value="입력">      
+</form>
+</body>
+</html>
