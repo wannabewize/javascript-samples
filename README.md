@@ -52,3 +52,14 @@
 ## 07.ErrorHandling
    * try_catch : 에러 처리
    * throw : 에러 발생   
+
+## 08.ADV
+   * var : JavaScript 변수의 특징
+   * global_variable : 글로벌 변수
+   * strict_mode : strict mode
+   * scope : 변수 스코프
+   * let : 블록 스코프 변수 let. (ES6)
+
+## 09.BasicObject
+
+   
