@@ -24,7 +24,6 @@ delete iu;
 console.log('After delete Obj :', iu);
 
 // 원시 타입 삭제 - 안된다.
-var bar = "1234";
+var bar = '1234';
 delete bar;				
 console.log('After delete String :', bar);                // 1234
-

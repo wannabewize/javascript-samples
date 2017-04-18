@@ -13,10 +13,7 @@
 * 밸류 타입과 레퍼런스 타입
 
 ## 02.Operator
-   * equal : 동등 비교
-   * in_delete : in, delete 연산자
-   * instanceof : instanceof 연산자
-   * and_or : and, or 연산자
+* 비교, delete, instanceof, &&, || 연산자
 
 ## 03.Control
    * forLoop : for 반복문

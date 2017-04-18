@@ -2,14 +2,20 @@
  * OR, AND 연산자
  */
 
-console.log('a' || 'b'); // a
-console.log(false || 'b');
-console.log(undefined || 'b');
+console.log('\n== || 연산자==');
+var ret = 'a' || 'b';
+console.log("'a' || 'b' =", ret); // a
+
+ret = false || 'b'
+console.log("false || 'b' =", ret);
+
+ret = undefined || 'b'
+console.log("undefined || 'b' =", ret);
 
 // undefined 검사 후 초기값
 var input;
 var var1 = input || 'default';
-console.log(var1); // default
+console.log("input || 'default' =", var1); // default
 
 var var2;
 if ( input ) {
@@ -17,9 +23,13 @@ if ( input ) {
 }
 console.log(var2);
 
-console.log('a' && 'b'); // b
-console.log(false && 'b'); // false
-console.log(undefined && 'b'); // undefined
+console.log('\n== && 연산자==');
+ret = 'a' && 'b';
+console.log("'a' && 'b' =", ret); // b
+ret = false && 'b';
+console.log("false && 'b' =", ret); // false
+ret = undefined && 'b';
+console.log("undefined && 'b' =", ret); // undefined
 
 var var3 = input && 'default';
-console.log(var2); // undefined
+console.log("input && 'default' =",var2); // undefined
