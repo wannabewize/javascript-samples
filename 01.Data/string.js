@@ -17,10 +17,9 @@ console.log('str === str3 :', str === str3); // true
 
 var newStr, ret;
 
-// 10, -1
-console.log('indexof : ', str.indexOf('Sc'), str.indexOf('sc'));
-// 12
-console.log('lastIndexOf : ', str.lastIndexOf('ri'));
+// 문자열 내 위치 찾기
+console.log('indexof : ', str.indexOf('Sc'), str.indexOf('sc')); // 10, -1
+console.log('lastIndexOf : ', str.lastIndexOf('ri')); // 12
 
 // char 타입은 없으니, string
 var ch = str.charAt(2);
@@ -28,26 +27,26 @@ console.log('charAt : ', ch, typeof ch); // l, string
 
 // 원 문자열은 그대로
 newStr = str.slice(1, 4);
-// Hello JavaScript ell
-console.log('slice : ', str, newStr);
+console.log('slice(1, 4) : ', newStr); // ell
 
+// 부분 문자열
 newStr = str.substring(1, 4);
-// Hello JavaScript ell
-console.log('substring : ', str, newStr);
+console.log('substring(1, 4) : ',newStr); // ell
 
 // start, length
 newStr = str.substr(1, 4);
-// Hello JavaScript ello
-console.log('substr : ', str, newStr);
+console.log('substr : ', newStr); // ello
 
+// 특정 문자로 분리
 newStr = str.split('a');
-// Hello JavaScript [ 'Hello J', 'v', 'Script' ]
-console.log('split : ', str, newStr);
+console.log('split : ', newStr); // [ 'Hello J', 'v', 'Script' ]
 
+// 정규식
 ret = str.match(/a/g);
 // [ 'a', index: 7, input: 'Hello JavaScript' ]
 console.log('match : ', ret);
 
+// 정규식을 이용한 변환
 newStr = str.replace(/a/g, 'A');
 // Hello JAvAScript
 console.log('replace : ', newStr);
@@ -59,9 +58,7 @@ console.log('replace : ', newStr);
 var strObj = new String('Hello JavaScript');
 console.log('String Object Type :', typeof strObj);
 
-
 var strObj2 = new String('Hello JavaScript');
-
 
 console.log('str == strObj1 :',str == strObj); // true
 console.log('str === strObj1 :',str === strObj); // false
