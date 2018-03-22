@@ -8,7 +8,7 @@ function Person(name) {
    this.getName = function() {
       console.log(this.constructor);
       return this.name;
-   }
+   };
 
    this.letMeIntroduce = function() {
       var self = this;
@@ -18,15 +18,15 @@ function Person(name) {
          console.log('this instanceof Person :' ,this instanceof Person);
          console.log('My Name is ' + this.name);
          console.log('My Name is ' + self.name);
-      }
-   }
+      };
+   };
 
    this.withArrow = function() {
       return () => {
          console.log('this instanceof Person :' ,this instanceof Person);
          console.log('My Name is ' + this.name);
-      }
-   } 
+      };
+   };
 }
 
 var obj = new Person('쯔위');
@@ -36,5 +36,5 @@ console.log('== this 가려짐');
 var introduce = obj.letMeIntroduce();
 introduce();
 
-console.log('== With Arrow functon')
+console.log('== With Arrow functon');
 obj.withArrow()();
