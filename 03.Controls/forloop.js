@@ -3,14 +3,14 @@
  */
 var array = ['IU', 'YuInna', 'Taeyon', 'Sulhyun'];
 var obj = {
-   cute: "IU",
-   adorable: "YuInna",
-   charm: "Taeyon",
-   shine:"Sulhyun"
+   cute: 'IU',
+   adorable: 'YuInna',
+   charm: 'Taeyon',
+   shine: 'Sulhyun'
 };
 
 
-console.log('== C style For Loop')
+console.log('== C style For Loop');
 for (var i = 0 ; i < array.length ; i++) {
    var item = array[i];
    console.log(i, item);
@@ -30,7 +30,7 @@ for (var index in array) {
 // 객체와 For-In
 console.log('== For-in with Object');
 for (var prop in obj) {
-   console.log('property name : ', prop + " value : " + obj[prop]);
+   console.log('property name : ', prop + ' value : ' + obj[prop]);
 }
 
 //
@@ -38,6 +38,6 @@ for (var prop in obj) {
 //
 console.log('== For Each with Array');
 array.forEach( (value, index, array) => {
-    console.log(index, value)
+   console.log(index, value);
 });
 
