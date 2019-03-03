@@ -24,4 +24,5 @@ const constVal = 1
 // const는 선언과 대입 분리 불가
 // Error : SyntaxError: Missing initializer in const declaration
 const constVal2
+// console.log(constVal2);
 // constVal2 = 'hello'

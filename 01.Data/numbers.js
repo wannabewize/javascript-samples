@@ -18,13 +18,15 @@ const num1 = parseInt("123")
 console.log('parseInt(123) =', num1, ', Type: ',typeof num1);  // number
 const num2 = parseInt("123px")
 console.log('parserInt("123px") =', num2, ', Type: ', typeof num2); // number
-const num3 = parseInt('Hello')
-console.log('parserInt("Hello") =', num3, ', Type: ', typeof num3);
+const num3 = parseInt("123.45")
+console.log('parseInt(123.45) =', num3, ', Type: ',typeof num3);  // number
+const num4 = parseInt('Hello')
+console.log('parserInt("Hello") =', num4, ', Type: ', typeof num4);
 
 // 실수로 변환
 console.log('\n== parseFloat ==')
-const num4 = parseFloat("123.45")
-console.log('parseFloat("123.45") =', num4, ', Type:', typeof num4);     // 123.45
+const num5 = parseFloat("123.45")
+console.log('parseFloat("123.45") =', num5, ', Type:', typeof num5);     // 123.45
 
 // 정수와 실수 비교
 console.log('\n== Int, Float 비교 ==')

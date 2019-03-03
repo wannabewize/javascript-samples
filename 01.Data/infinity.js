@@ -3,6 +3,8 @@
  */
 console.log('== Infinity ==\n');
 
+console.log('typeof(Infinity) :',typeof(Infinity))
+
 var val = 1 / 0;
 console.log('val = 1 / 0 : ', val);
 console.log('val == Infinity :', val == Infinity);

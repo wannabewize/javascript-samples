@@ -2,8 +2,9 @@
  * 부울 타입
  */
 
-var val = ( 1 == 1)
-var val2 = true
+var val = true
+var val2 = ( 1 == 1)
+
 console.log('typeof :', typeof val) // ‘boolean’
 
 // 값 비교
