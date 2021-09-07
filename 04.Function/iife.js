@@ -1,4 +1,9 @@
-// IIFE : Immediately Invoked Function Expression
+/**
+ * 이름없는 함수 정의하자 마자 호출하기.
+ * IIFE : Immediately Invoked Function Expression
+ */
+
+// 파라미터 없는 함수 정의와 호출
 (function(){
    console.log('IIFE Test1');
 })();

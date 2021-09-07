@@ -2,8 +2,8 @@
  * 함수 파라미터
  */
 
-function func(a, b) {
-   console.log(a, b);
+function func(arg1, arg2) {
+   console.log('arg1:', arg1, 'arg2:', arg2);
 }
 
 console.log('func(2, 3)');

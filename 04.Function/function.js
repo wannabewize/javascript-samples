@@ -2,22 +2,23 @@
  * 함수
  */
 
+// 함수 정의와 사용
 function sayHello() {
     console.log('hello');
 }
 sayHello();
 
 // function expression
-var hello = function() {
+const hello = function() {
     console.log('Hi~');
 }
 hello();
 
-// Return
+// 반환값
 function thankYou() {
     return 'and you?';
 }
-var ret = thankYou(); 
+const ret = thankYou(); 
 
 // Parameter
 function say(what) {
@@ -26,10 +27,14 @@ function say(what) {
 
 say('How are you');
 
-var sayHelloTo = function(who) {
+const sayHelloTo = function(who) {
     console.log('Hello ' + who);
 } 
 
-
-var ret2 = sayHello();
+const ret2 = sayHello();
 console.log('return value of Non-return function :', ret2); // undefined
+
+const sayGiveMeMoney = (amount) => {
+    console.log('give me money ', amount);
+}
+sayGiveMeMoney('all');

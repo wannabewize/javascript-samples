@@ -53,7 +53,7 @@ console.log('replace : ', newStr);
 
 
 //
-// String 객체
+// String 타입
 //
 var strObj = new String('Hello JavaScript');
 console.log('String Object Type :', typeof strObj);
