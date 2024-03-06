@@ -2,11 +2,11 @@
 // doIt();
 
 try {
-    doIt();
+  doIt();
 }
-catch ( error ) {
-    const message = error.message;
-    console.error(message);
+catch (error) {
+  const message = error.message;
+  console.error(message);
 }
 
 console.log('== END ==');

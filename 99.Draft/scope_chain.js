@@ -3,13 +3,13 @@
  */
 
 function outFn() {
-   var value = 2;
+  var value = 2;
 
-	function inFn() {
-		console.log('value : ', value++);
-	}
+  function inFn() {
+    console.log('value : ', value++);
+  }
 
-	inFn();
+  inFn();
 }
 
 outFn();

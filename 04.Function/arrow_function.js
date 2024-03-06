@@ -5,7 +5,7 @@
 
 // Arrow Function 정의와 사용
 const greet = (who) => {
-    console.log('Hello' + who);
+  console.log('Hello' + who);
 }
 
 greet(' ArrowFunction');

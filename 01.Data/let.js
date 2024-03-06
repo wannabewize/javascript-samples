@@ -22,6 +22,6 @@ let letValue2 = 10;
 // 블록 스코프.
 let scope = 0;
 {
-   let scope = 1;
+  let scope = 1;
 }
 console.log('scope = ', scope);

@@ -3,8 +3,8 @@
  */
 
 var iu = {
-    name: 'IU',
-    age: 20
+  name: 'IU',
+  age: 20
 };
 
 console.log('typeof iu :', typeof iu); // Object
@@ -19,8 +19,8 @@ console.log('프로퍼티 접근 :', age, name);
 
 // 같은 값을 가진 객체
 var clone = {
-    name: '아이유',
-    age: 20
+  name: '아이유',
+  age: 20
 }
 
 console.log('iu == clone :', iu == clone); // false

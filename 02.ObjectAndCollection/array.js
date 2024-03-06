@@ -19,13 +19,13 @@ console.log('== push');
 console.log('Before :', array);
 ret = array.push('Toyota'); // [ 'Porche', 'BMW', 'Mercedes Benz', 'Toyota' ]
 console.log('After :', array);
-console.log('push result :', ret); 
+console.log('push result :', ret);
 
 // 배열의 마지막 원소를 제거. 제거된 원소 반환
 console.log('== pop');
 console.log('Before :', array);
 const popped = array.pop(); // [ 'Porche', 'BMW', 'Mercedes Benz' ]
-console.log('After :', array); 
+console.log('After :', array);
 console.log('pop Result : ', popped);
 
 // 새로운 배열이 생성된다.
@@ -56,14 +56,14 @@ console.log('Before : ', array);
 // 치환 - array1이 변경됨
 const splicedArray = array.splice(3, 1, 'Ferrari', 'Ford');
 console.log('After origin array : ', array);
-console.log('splice(3, 1, Ferrari, Ford) result : ',splicedArray);
+console.log('splice(3, 1, Ferrari, Ford) result : ', splicedArray);
 
 // splice를 이용한 원소 제거
 console.log('== splice for delete');
 console.log('Before : ', array);
-const splicedArray2 = array.splice(4, 1); 
+const splicedArray2 = array.splice(4, 1);
 console.log('After : ', array);
-console.log('splice(4, 1) Result : ',splicedArray2);
+console.log('splice(4, 1) Result : ', splicedArray2);
 
 console.log('== shift');
 console.log('Before :', array);
@@ -93,20 +93,20 @@ console.log('sort result : ', newArray);
 console.log('== sort2');
 console.log('Before :', array);
 array.sort(function sortFunc(item1, item2) {
-   return item1.length > item2.length;
+  return item1.length > item2.length;
 });
 console.log('After :', array);
 
 // 문자열로 변환
 console.log('== join');
 console.log('array : ', array)
-ret = array.join(' or '); 
-console.log('join : ',ret);
+ret = array.join(' or ');
+console.log('join : ', ret);
 
 // 문자열로
 console.log('== toString');
 console.log('array : ', array);
-console.log('toString result :',array.toString());
+console.log('toString result :', array.toString());
 
 
 //
@@ -115,5 +115,5 @@ console.log('toString result :',array.toString());
 var array2 = new Array(3);
 var array3 = new Array('Bus', 'Metro', 'Walk');
 
-console.log('new Array(3) :',array2);
-console.log('new Array("item") :',array3);
+console.log('new Array(3) :', array2);
+console.log('new Array("item") :', array3);

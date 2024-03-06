@@ -1,14 +1,14 @@
 function* gen() {
-    yield 1;
-    yield 2;
-    yield 3;
+  yield 1;
+  yield 2;
+  yield 3;
 }
 
 const g = gen();
 
 
 for (const item of g) {
-    console.log(item);
+  console.log(item);
 }
 
 const k = gen();

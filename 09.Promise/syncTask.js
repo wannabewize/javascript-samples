@@ -1,5 +1,5 @@
 function justDoIt() {
-    console.log('just do it');
+  console.log('just do it');
 }
 
 justDoIt();

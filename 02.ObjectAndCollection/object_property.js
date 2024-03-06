@@ -1,6 +1,6 @@
 let starwars = {
-    title: 'Star Wars',
-    director: 'George Lucas'
+  title: 'Star Wars',
+  director: 'George Lucas'
 }
 
 // 프로퍼티 접근

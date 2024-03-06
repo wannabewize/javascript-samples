@@ -9,45 +9,46 @@ console.log('x =', x);
 
 // null로 비교하기
 if (x == null) {
-    console.log('x == null');
+  console.log('x == null');
 }
 else {
-    console.log('x != null');
+  ß
+  console.log('x != null');
 }
 
 if (x === null) {
-    console.log('x === null');
+  console.log('x === null');
 }
 else {
-    console.log('x !== null');
+  console.log('x !== null');
 }
 
 if (x) {
-    console.log('if (x) 참');
+  console.log('if (x) 참');
 }
 else {
-    console.log('if (x) 거짓');
+  console.log('if (x) 거짓');
 }
 
 if (!x) {
-    console.log('if (!x) 참');
+  console.log('if (!x) 참');
 }
 else {
-    console.log('if (!x) 거짓');
+  console.log('if (!x) 거짓');
 }
 
 if (x == undefined) {
-    console.log('x == undefined');
+  console.log('x == undefined');
 }
 else {
-    console.log('x != undefined');
+  console.log('x != undefined');
 }
 
 if (x === undefined) {
-    console.log('x === undefined');
+  console.log('x === undefined');
 }
 else {
-    console.log('x !== undefined');
+  console.log('x !== undefined');
 }
 
 // 타입 비교

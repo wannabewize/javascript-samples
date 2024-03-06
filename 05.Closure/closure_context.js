@@ -3,11 +3,11 @@
  */
 
 function makeId() {
-   var lastId = 0;
+  var lastId = 0;
 
-   return function() {
-      return ++lastId
-   };
+  return function () {
+    return ++lastId
+  };
 }
 
 var idFunc = makeId();

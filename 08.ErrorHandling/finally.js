@@ -1,12 +1,12 @@
 try {
-    doIt();
-    console.log('Success');
+  doIt();
+  console.log('Success');
 }
-catch ( error ) {
-    console.log('Fail');
+catch (error) {
+  console.log('Fail');
 }
 finally {
-    console.log('Finally!');
+  console.log('Finally!');
 }
 
 // function doIt() {}

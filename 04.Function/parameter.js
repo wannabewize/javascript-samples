@@ -3,7 +3,7 @@
  */
 
 function func(arg1, arg2) {
-   console.log('arg1:', arg1, 'arg2:', arg2);
+  console.log('arg1:', arg1, 'arg2:', arg2);
 }
 
 console.log('func(2, 3)');
