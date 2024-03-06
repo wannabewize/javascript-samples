@@ -1,47 +1,54 @@
 # JavaScript Examples
 
 ### Usage
-   - node 와 함께 동작
-   
-       `node SOURCE-FILE.JS`
-
-## 00.New : ES6 이상 기능 정리
+  - node 와 함께 동작   
+  `node SOURCE-FILE.JS`
 
 ## 01.Data : 데이터 다루기
-
 * 변수와 상수
 * 데이터 타입
 * 주요 데이타 타입
 * 밸류 타입과 레퍼런스 타입
 
-## 02.Operator
-* 비교, delete, instanceof, &&, || 연산자
+## 02.Object
+  * 객체 타입
+  * 객체 구조 분해 할당(object destructuring)
 
-## 03.Control
-* forLoop : for 반복문
-* switch_case : switch-case 문
+## 03.Collection
+  * 배열
+  * 맵
+  * 구조분해할당(array destructuring)
 
-## 04.Function
-* 함수 정의와 사용
+## 04.Operator, Control
+  * 연산자
+  * 반복문
+  * 조건문
 
-## 05.Closure
-* 클로저
+## 05.Function
+  * 함수 정의와 사용
 
-## 06.Class
+## 06.Closure
+  * 클로저
 
-클래스 정의와 객체 생성, 프로퍼티와 메소드, 상속
+## 07.Class
+  * 클래스 정의와 객체 생성
+  * 프로퍼티와 메소드
+  * 상속
 
-## 07.ErrorHandling
-   * try_catch : 에러 처리
-   * throw : 에러 발생   
+## 08.MapFilterReduce
+  * map
+  * filter
+  * reduce
 
-## 08.ADV
-   * var : JavaScript 변수의 특징
-   * global_variable : 글로벌 변수
-   * strict_mode : strict mode
-   * scope : 변수 스코프
-   * let : 블록 스코프 변수 let. (ES6)
+## 09.ErrorHandling
+  * try_catch : 에러 처리
+  * throw : 에러 발생   
 
-## 09.BasicObject
+## 10.Promise
+  * 콜백
+  * 프라미스
+
+## 11.BasicObject
+  * 기본 객체
 
    
