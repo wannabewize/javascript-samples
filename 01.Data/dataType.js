@@ -5,7 +5,7 @@
  */
 
 let val = 10;
-console.log('10 type : ', typeof (val)); // number
+console.log('10 type : ', typeof val); // number
 
 val = '10';
 console.log('"10" type : ', typeof val); // string
@@ -14,10 +14,10 @@ val = true
 console.log('true type : ', typeof val); // boolean
 
 val = [1, 2, 3];
-console.log('[1, 2, 3] type : ', typeof (val)); // object
+console.log('[1, 2, 3] type : ', typeof val); // object
 
 val = { one: 1, two: 2 }
-console.log('{one:1, two:2} type : ', typeof (val)); // object
+console.log('{one:1, two:2} type : ', typeof val); // object
 
 
 //

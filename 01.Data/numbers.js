@@ -3,12 +3,12 @@
  */
 
 // 16진수형, 10진수형, 8진수형
-console.log('== Number ==');
-console.log(0x0F); // 15
-console.log(15);   // 15
-console.log(017);  // 15
+console.log('== Number ==\n');
+console.log(15);   // 10진수
+console.log(0x0F); // 16진수
+console.log(0o17);  // 8진수
 
-var val = 1;
+let val = 1;
 console.log('typeof(val) =', typeof(val) );
 console.log('val은 숫자 타입인가?', typeof val == 'number');
 

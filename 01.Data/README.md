@@ -1,8 +1,10 @@
 # 데이터 다루기
 
 ## 변수와 상수
-  * var_const : 변수와 상수
-  * var_naming : 이름 규칙
+  * var : var 변수
+  * let : let 변수
+  * const : 상수
+  * naming : 이름 규칙
 
 ## 데이터 타입
   * dataType : 데이터 타입, 타입 체크

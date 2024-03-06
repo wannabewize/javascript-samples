@@ -3,9 +3,14 @@
  * null
  */
 
+console.log('== Sample codes for undefined ==\n');
+
 // 선언만 하면 undefined다
 let x;
-console.log('var x 인 경우', x);
+console.log('초기화하지 않은 변수x의 값 :', x);
+
+console.log('x == undefined :', x == undefined);
+console.log('x === undefined :', x === undefined);
 
 // undefine 비교하기
 if (x) {
@@ -22,40 +27,10 @@ else {
     console.log('if (!x) 로 undefined 판단 실패');
 }
 
-if (x == undefined) {
-    console.log('if (x == undefined) 로 undefined 판단 성공');
-}
-else {
-    console.log('if (x == undefined) 로 undefined 판단 실패');
-}
-
-if (x === undefined) {
-    console.log('if (x === undefined) 로 undefined 판단 성공');
-}
-else {
-    console.log('if (x === undefined) 로 undefined 판단 실패');   
-}
-
-if (x == "undefined") {
-    console.log('if (x == "undefined") 로 undefined 판단 성공');
-}
-else {
-    console.log('if (x == "undefined") 로 undefined 판단 실패');
-}
-
-if (x === "undefined") {
-    console.log('if (x === "undefined") 로 undefined 판단 성공');
-}
-else {
-    console.log('if (x === "undefined") 로 undefined 판단 실패');
-}
 
 // typeof
-
-console.log('typeof', typeof(x));
-if ( typeof(x) == "undefined" ) {
-    console.log('typeof(x) == "undefined" 판단 성공')
-}
+console.log('typeof x :', typeof(x));
+console.log('typeof(x) == "undefined":', typeof(x) == 'undefined');
 
 // 주의! 값이 false인 경우
 console.log('y = false 인 경우')
